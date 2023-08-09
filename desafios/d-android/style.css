@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Montserrat', sans-serif;
+    --fonte2: 'Android', sans-serif;
+}
+
+header {    
+    background-image: linear-gradient(180deg, var(--cor2), var(--cor5));    
+    color: rgb(235, 235, 235);
+    text-align: center;           
+    height: 100%;
+    width: 100%;  
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.514);    
+}
+
+header > h1 {
+    font-family: var(--fonte1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.416);
+}
+
+header > p {
+    font-size: 0.8em;
+    text-indent: 0px;
+    line-height: 2.0em;        
+}
+
+nav {
+    text-align: left;    
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: normal;
+    margin-right: 20px;    
+    padding: 0px 0px 0px 15px;
+}
+
+nav > a:hover {
+    border-radius: 3px;
+}
+
+main {    
+    min-width: 400px;
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+}
+
+body {        
+    margin: 0px;    
+    background-color: var(--cor1);
+}
+
+article {    
+    font-family: var(--fonte0);    
+    padding-top: 5px;
+}
+
+article > h1,h2 {
+    font-family: var(--fonte2);    
+    color: var(--cor4);
+    text-indent: 10px;
+}
+
+article > h2 {
+    background-image: linear-gradient(90deg, var(--cor1), var(--cor0), white);
+}
+
+p {    
+    text-indent: 30px;
+}
+
+.video {
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;    
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 10px;
+    margin: 10px;    
+}
+
+aside > h2 {
+    background-color: var(--cor3);
+    color: var(--cor0);
+    margin-top: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;        
+}
+
+footer > p {
+    margin: 0px;
+}
