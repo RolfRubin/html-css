@@ -3,18 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
 :root {
-    --fonte-titulo: 'Passion One', Verdana, Helvetica, sans-serif;
-    --fonte-texto: 'Sriracha', sans-serif;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-2: 'Passion One', cursive;
+    --fonte-3: 'Sriracha', cursive;
 }
 
 * {
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;   
+    font-size: 1em;     
 }
 
 html, body {
     min-height: 100vh;
     background-color: lightgrey;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -26,6 +29,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte-2);
+    font-size: 9vw;
 }
 
 header > p {
@@ -47,6 +52,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-3);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -60,7 +67,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.250);
 }
 
